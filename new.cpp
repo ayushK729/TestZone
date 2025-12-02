@@ -11,12 +11,20 @@ bool isPrime(int n)
         }
     return f;
 }
+int factorial(int n)
+{
+    int f=1;
+    if(n==1 || n==0)
+        return 1;
+    else return n*(factorial(n-1));
+}
 int main()
 {
     int n;
     cout<<"Input a number of choice:";
     cin>>n;
     cout<<"Is "<<n<<" a prime number --> "<<isPrime(n)<<endl;
+    cout<<"Factorial of "<<n<<" --> "<<factorial(n)<<endl;
     cout<<"Hello World!";
     return 0;
 }
