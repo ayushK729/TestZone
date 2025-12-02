@@ -18,6 +18,10 @@ int factorial(int n)
         return 1;
     else return n*(factorial(n-1));
 }
+bool isEven(int n)
+{
+    return (n%2==0)?true:false;
+}
 int main()
 {
     int n;
@@ -25,6 +29,7 @@ int main()
     cin>>n;
     cout<<"Is "<<n<<" a prime number --> "<<isPrime(n)<<endl;
     cout<<"Factorial of "<<n<<" --> "<<factorial(n)<<endl;
+    cout<<"Is"<<n<<" an even number --> "<<isEven(n)<<endl;
     cout<<"Hello World!";
     return 0;
 }
